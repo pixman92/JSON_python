@@ -48,6 +48,24 @@ def parseQt():
 def pullFromTwoIndexes(one, two):
     toPrint = strungVariables[one+1:two]
     print(toPrint)
+    return toPrint
+
+renewedArray=[]
+def pushToNew(one, two, three, four, index):
+    global renewedArray
+    first = pullFromTwoIndexes(one, two)
+    second = pullFromTwoIndexes(three, four)
+
+    tmpArray = [first, second]
+    if(index!=-1):
+        renewedArray[index] = tmpArray
+    else:
+        renewedArray.append(tmpArray)
+
+
+# TODO - function that takes parsed data and puts it back into an accepable array
+# TODO - going back and forth
+
 
 
 # =================
