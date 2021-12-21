@@ -1,6 +1,4 @@
-teststst
+# TODO - take an object from Python
+# TODO - make it into a string
 
-
-
-
-hello test s
+# TODO - put the strinbg back into object data
