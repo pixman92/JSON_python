@@ -53,15 +53,36 @@ def pullFromTwoIndexes(one, two):
 renewedArray=[]
 def pushToNew(one, two, three, four, index):
     global renewedArray
-    first = pullFromTwoIndexes(one, two)
-    second = pullFromTwoIndexes(three, four)
+    first = pullFromTwoIndexes(one, two)            # pulls the whole string of variables (strungVariables)
+    second = pullFromTwoIndexes(three, four)        # pulls the whole string of variables (strungVariables)
 
     tmpArray = [first, second]
     if(index!=-1):
         renewedArray[index] = tmpArray
     else:
         renewedArray.append(tmpArray)
+    tmpArray = []
+    print (renewedArray)
+        
 
+# =============================
+def parseThrough():
+    parseQt()
+    index = 0
+    # for index in range(0, len(indexesOfSingleQuotes)):
+    while (index < (len(indexesOfSingleQuotes)/4)):
+        print ('???, ', index, indexesOfSingleQuotes[index])
+        print (index, '...', indexesOfSingleQuotes[index], indexesOfSingleQuotes[index+1], indexesOfSingleQuotes[index+2], indexesOfSingleQuotes[index+3] )
+        pushToNew(indexesOfSingleQuotes[index], indexesOfSingleQuotes[index+1], indexesOfSingleQuotes[index+2], indexesOfSingleQuotes[index+3], -1)
+        # if(index+4<=len(indexesOfSingleQuotes)):
+        #     index = index + 4
+        # else:
+        #     print("Out of bounds!")
+        index = index+4
+        pushToNew(indexesOfSingleQuotes[index], indexesOfSingleQuotes[index+1], indexesOfSingleQuotes[index+2], indexesOfSingleQuotes[index+3], -1)
+        # index = index+5
+
+    print('renewedArray ', renewedArray)
 
 # TODO - function that takes parsed data and puts it back into an accepable array
 # TODO - going back and forth
@@ -73,7 +94,7 @@ def run():
     data('name?', 'loverBoy')
     data('place?', 'home!')
     data('age?', 23)
-    parseQt()
+    # parseQt()
 
 run()
 
