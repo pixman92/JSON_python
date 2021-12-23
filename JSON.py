@@ -75,11 +75,12 @@ def pushToNew(one, two, three, four, index):
         
 
 # =============================
-arrayPlacementIndex = -1
+arrayPlacementIndex = 0
 def parseThrough():
     # pull all 'variables' from whole Quotes Array
     parseQt()
     index = 0
+    global arrayPlacementIndex
     # for index in range(0, len(indexesOfSingleQuotes)):
     # while (index < (len(indexesOfSingleQuotes)/4)):
     while(index < len(indexesOfSingleQuotes)):
@@ -88,10 +89,23 @@ def parseThrough():
         pushToNew(indexesOfSingleQuotes[index], indexesOfSingleQuotes[index+1], indexesOfSingleQuotes[index+2], indexesOfSingleQuotes[index+3], -1)
 
         index = index+4  # increment to the next Set of 4!
+        arrayPlacementIndex+=1
     print('renewedArray ', renewedArray)
+
+finalArray=[]
+def makingArray():
+    parseThrough()
+    global finalArray
+    for x in range(0, arrayPlacementIndex):
+        finalArray.insert(x, renewedArray[x])
+
+    print ('finalArray, ', finalArray)
+
+
 
 # TODO - function that takes parsed data and puts it back into an accepable array
 # TODO - going back and forth
+
 
 
 
@@ -120,3 +134,5 @@ run()
 # TODO - make it into a string
 
 # TODO - put the strinbg back into object data
+
+
