@@ -37,6 +37,7 @@ def data(toAdd1, toAdd2):
 # =================
 indexesOfSingleQuotes = []
 def parseQt():
+    # pulls out an Array of Single Quotes!
     global indexesOfSingleQuotes
     indexesOfSingleQuotes=[]
     for i in range(0, len(strungVariables)):
@@ -74,6 +75,7 @@ def pushToNew(one, two, three, four, index):
         
 
 # =============================
+arrayPlacementIndex = -1
 def parseThrough():
     # pull all 'variables' from whole Quotes Array
     parseQt()
@@ -118,4 +120,3 @@ run()
 # TODO - make it into a string
 
 # TODO - put the strinbg back into object data
-s
