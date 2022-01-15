@@ -1,9 +1,5 @@
 
-# author: TheArborist
-# date: 2022
 
-def name():
-    print("The Aroborist")
 
 class JSONPython_Instance():
 
