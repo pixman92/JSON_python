@@ -1,4 +1,5 @@
 
+# author: TheArborist
 
 
 class JSONPython_Instance():
