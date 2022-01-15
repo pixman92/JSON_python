@@ -1,9 +1,8 @@
 
 
-
 class JSONPython_Instance():
 
-    def __init__(self) -> None:
+    def __init__(self):
         self.meData = []
         self.strungVariables = ""
         self.seindexesOfSingleQuotes=[]
