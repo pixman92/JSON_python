@@ -13,7 +13,7 @@ def run():
     while (pos2 < len(tmp)):
         # import pdb; pdb.set_trace()  # debugger
 
-        pos = tmp[pos2:len(tmp)].find('[[')
+        pos = tmp[pos2:len(tmp)].find('[[') #0
         print('pos', pos)
         print('pos2', pos2)
         holdingArray.append(pos)
@@ -22,13 +22,15 @@ def run():
 
         # import pdb; pdb.set_trace() # debugger
 
-        pos2 = tmp[pos:len(tmp)].find(']]') 
-        pos2 += 2 
+        pos2 = tmp[pos:len(tmp)].find(']]') #23
+        pos2 += 2                           #25
         holdingArray.append(pos2)
 
-        pos = tmp[pos2:len(tmp)].find('[[')
+        pos = tmp[pos2:len(tmp)].find('[[') #27
+        holdingArray.append(pos)            
 
-        holdingArray.append(pos)
+        pos2 = tmp[pos+2:len(tmp)].find(']]') .
+        holdingArray.append(pos2)
 
 
 
