@@ -29,7 +29,7 @@ def run():
         pos = tmp[pos2:len(tmp)].find('[[') #27
         holdingArray.append(pos)            
 
-        pos2 = tmp[pos+2:len(tmp)].find(']]') .
+        pos2 = tmp[pos+2:len(tmp)].find(']]') #end
         holdingArray.append(pos2)
 
 
