@@ -21,7 +21,7 @@ def run():
         # import pdb; pdb.set_trace() # debugger
 
         pos2 = tmp[pos+2:len(tmp)].find(']]') #53
-        # pos2 = 2 + pos2   #0 + 2
+        pos2 +s= pos2   #0 + 2
         holdingArray.append(pos2)
 
         print('pos', pos)
