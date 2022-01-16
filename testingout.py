@@ -1,6 +1,30 @@
 
 
+tmp = ""; arrOfLeft = []; arrOfRight = []
 def run():
+    global tmp; global arrOfLeft; global arrOfRight;
+    tmp = [[['1', '2'], ['3', '4']], [['5', '6'],['7', '8']], [['9', '10'], ['11', '12']]]
+    tmp = str(tmp)
+
+    for x in range(0, len(tmp)):
+        arrOfLeft = []
+        arrOfLeft.append(0)
+
+        arrOfLeft.append(tmp[arrOfLeft[-1]:len(tmp)].find('[[')+1 + arrOfLeft[-1])
+        x = arrOfLeft[-1]
+
+    for x in range(0, len(tmp)):
+
+        arrOfRight=[]
+        arrOfRight.append(0)
+
+
+        arrOfRight.append(tmp[arrOfRight[-1]:len(tmp)].find(']]')+1 + arrOfRight[-1])
+
+
+
+
+def runOLD():
     # tmp = [[['name?', 'sam'], ['time', 'noon'],['lucky', 'yup'] ], ['people', 'are awesome'], [['age', '12'], ['place', 'nowhere']]]
 
     tmp = [[['1', '2'], ['3', '4']], [['5', '6'],['7', '8']]]
@@ -22,14 +46,14 @@ def run():
 
         # import pdb; pdb.set_trace() # debugger
 
-        pos2 = tmp[pos:len(tmp)].find(']]') #23
+        pos2 += tmp[pos:len(tmp)].find(']]') #23
         pos2 += 2                           #25
         holdingArray.append(pos2)
 
-        pos = tmp[pos2:len(tmp)].find('[[') #27
+        pos += tmp[pos2:len(tmp)].find('[[') #27
         holdingArray.append(pos)            
 
-        pos2 = tmp[pos+2:len(tmp)].find(']]') #end
+        pos2 += tmp[pos+2:len(tmp)].find(']]') #end
         holdingArray.append(pos2)
 
 
