@@ -9,7 +9,7 @@ def run():
     pos = 0
     pos2 = 0
     while (pos2 < len(tmp)):
-        # import pdb; pdb.set_trace()  # debugger
+        import pdb; pdb.set_trace()  # debugger
 
         pos = tmp[pos2:len(tmp)].find('[[')
         print('pos', pos)
@@ -18,16 +18,16 @@ def run():
 
 
 
-        # import pdb; pdb.set_trace() # debugger
+        import pdb; pdb.set_trace() # debugger
 
         pos2 = tmp[pos+2:len(tmp)].find(']]') #53
-        pos2 += pos2   #0 + 2
+        pos2 += pos   #0 + 2
         holdingArray.append(pos2)
 
         print('pos', pos)
         print('pos2', pos2)
 
-        # import pdb; pdb.set_trace() # debugger
+        import pdb; pdb.set_trace() # debugger
 
 
 
