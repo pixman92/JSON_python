@@ -8,11 +8,12 @@ def run():
 
     for x in range(0, len(tmp)):
         print(x)
+
         arrOfLeft = []
         arrOfLeft.append(0)
 
         arrOfLeft.append(tmp[arrOfLeft[-1]:len(tmp)].find('[[')+1 + arrOfLeft[-1])
-        x = arrOfLeft[-1]
+        x += arrOfLeft[-1]
 
     for x in range(0, len(tmp)):
 
