@@ -63,6 +63,14 @@ class JSONPython_Instance():
         return toPrint
 
     # =================
+    def pullTwoWords(self):
+        # pull between 2x [[]]
+        strVersion = self.makeIntoString()
+        strVersion = strVersion.split('\'')
+        print(strVersion)
+
+
+    # =================
     def pushToNew(self, one, two, three, four, index):
         # pulling 2 terms, one dictionary | another (key) definition
         first = self.pullFromTwoIndexes(one, two)            # pulls the whole string of variables (strungVariables)
