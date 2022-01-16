@@ -6,24 +6,24 @@ def run():
     tmp = [[['1', '2'], ['3', '4']], [['5', '6'],['7', '8']], [['9', '10'], ['11', '12']]]
     tmp = str(tmp)
 
-    arrOfLeft = []
-    arrOfLeft.append(0)
     # for x in range(0, len(tmp)):
     # while(arrOfLeft[-1]<=len(tmp)):
         # print(x) 
 
-    arrOfLeft.append(tmp[arrOfLeft[-1]+2:len(tmp)].find('[[')+1 + arrOfLeft[-1])
-    print (arrOfLeft)
+    while(arrOfRight[-1]+3<=len(tmp)):
+        arrOfLeft = []
+        arrOfLeft.append(0)
+        arrOfLeft.append(tmp[arrOfLeft[-1]+2:len(tmp)].find('[[')+1 + arrOfLeft[-1])
+        print (arrOfLeft)
 
         # x += arrOfLeft[-1]
 
-    # for x in range(0, len(tmp)):
-    arrOfRight=[]
-    arrOfRight.append(0)
-    # while(arrOfRight[-1]+1<=len(tmp)):
+        # for x in range(0, len(tmp)):
+        arrOfRight=[]
+        arrOfRight.append(0)
 
 
-    arrOfRight.append(tmp[arrOfRight[-1]+2:len(tmp)].find(']]')+1 + arrOfRight[-1])
+        arrOfRight.append(tmp[arrOfRight[-1]+2:len(tmp)].find(']]')+1 + arrOfRight[-1])
 
         # x+= arrOfRight[-1]
 
