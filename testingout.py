@@ -28,6 +28,8 @@ def run():
 
         pos = tmp[pos2:len(tmp)].find('[[')
 
+        holdingArray.append(pos)
+
 
 
         print('pos', pos)
