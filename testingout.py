@@ -17,8 +17,8 @@ def run():
 
     while(arrOfRight[-1]+3<len(tmp)):
         arrOfLeft.append(tmp[arrOfLeft[-1]+2:len(tmp)].find('[[')+1 + arrOfLeft[-1])
-        print (']]', arrOfRight)
-        print ('[[', arrOfLeft)
+        print ('right: ]]: ', arrOfRight)
+        print ('left: [[: ', arrOfLeft)
 
         # x += arrOfLeft[-1]
 
