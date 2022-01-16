@@ -12,6 +12,8 @@ def run():
         import pdb; pdb.set_trace()  # debugger
 
         pos = tmp[pos2:len(tmp)].find('[[')
+        print('pos', pos)
+        print('pos2', pos2)
         holdingArray.append(pos)
         pos += 2    #0 + 2
 
@@ -19,9 +21,15 @@ def run():
 
         pos2 = tmp[pos:len(tmp)].find(']]') #53
 
+        print('pos', pos)
+        print('pos2', pos2)
+
         holdingArray.append(pos2)
 
         pos2 += pos2 + 2 #pos (35) + 2
+
+        print('pos', pos)
+        print('pos2', pos2)
 
         import pdb; pdb.set_trace() # debugger
 
@@ -42,5 +50,5 @@ def run():
 
 # [[ = 0
 # ]] = 53
-# new length = 29, on top of 53 and 2
-# new length = 35, on top of 53, 2 and 29
+# new length = 29, on top of 53 and 2  -> 84 
+# new length = 35, on top of 53, 2 and 29 -> 119
