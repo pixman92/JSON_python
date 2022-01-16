@@ -15,11 +15,11 @@ def run():
         print('pos', pos)
         print('pos2', pos2)
         holdingArray.append(pos)
-        pos += 2    #0 + 2
 
         # import pdb; pdb.set_trace() # debugger
 
         pos2 = tmp[pos:len(tmp)].find(']]') #53
+        pos2 = 2 + pos2   #0 + 2
 
         print('pos', pos)
         print('pos2', pos2)
