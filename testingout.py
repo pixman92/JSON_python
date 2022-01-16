@@ -7,6 +7,7 @@ def run():
     tmp = str(tmp)
 
     for x in range(0, len(tmp)):
+        print(x)
         arrOfLeft = []
         arrOfLeft.append(0)
 
