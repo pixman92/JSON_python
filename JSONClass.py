@@ -68,7 +68,7 @@ class JSONPython_Instance():
     def pullTwoWords(self):
         # pull between 2x [[]]
         strVersion = self.makeIntoString()
-        splitWords = strVersion.split('\'')
+        self.splitWords = strVersion.split('\'')
         # splitWords = strVersion
         print(strVersion)
 
