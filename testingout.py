@@ -8,7 +8,7 @@ def run():
     holdingArray = []
     pos = 0
     pos2 = 0
-    for x in range (0, len(tmp)):
+    while (pos2 < len(tmp))
         # import pdb; pdb.set_trace()  # debugger
 
         pos = tmp[pos2:len(tmp)].find('[[')
