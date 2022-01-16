@@ -20,6 +20,8 @@ class JSONPython_Instance():
         self.tmp2Array = []
         self.tmp3Array = []
 
+        self.splitWords = []
+
 
     def data(self, toAdd1, toAdd2):
         # adds data to array
@@ -67,6 +69,7 @@ class JSONPython_Instance():
         # pull between 2x [[]]
         strVersion = self.makeIntoString()
         strVersion = strVersion.split('\'')
+        splitWords = strVersion
         print(strVersion)
 
 
