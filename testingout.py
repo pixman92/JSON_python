@@ -10,7 +10,7 @@ def run():
     # while(arrOfLeft[-1]<=len(tmp)):
         # print(x) 
 
-    while(arrOfRight[-1]+3<=len(tmp)):
+    while(arrOfRight[-1]+3<len(tmp)):
         arrOfLeft = []
         arrOfLeft.append(0)
         arrOfLeft.append(tmp[arrOfLeft[-1]+2:len(tmp)].find('[[')+1 + arrOfLeft[-1])
