@@ -1,7 +1,9 @@
 
 
 def run():
-    tmp = [[['name?', 'sam'], ['time', 'noon'],['lucky', 'yup'] ], ['people', 'are awesome'], [['age', '12'], ['place', 'nowhere']]]
+    # tmp = [[['name?', 'sam'], ['time', 'noon'],['lucky', 'yup'] ], ['people', 'are awesome'], [['age', '12'], ['place', 'nowhere']]]
+
+    tmp = [[['1', '2'], ['3', '4']], [['5', '6'],['7', '8']]]
 
     tmp=str(tmp)
     # while(tmp.find(']]')
