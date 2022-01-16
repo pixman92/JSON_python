@@ -9,18 +9,18 @@ def run():
     arrOfLeft = []
     arrOfLeft.append(0)
     # for x in range(0, len(tmp)):
-    while(arrOfLeft[-1]<=len(tmp)):
+    # while(arrOfLeft[-1]<=len(tmp)):
         # print(x) 
 
-        arrOfLeft.append(tmp[arrOfLeft[-1]+2:len(tmp)].find('[[')+1 + arrOfLeft[-1])
-        print (arrOfLeft)
+    arrOfLeft.append(tmp[arrOfLeft[-1]+2:len(tmp)].find('[[')+1 + arrOfLeft[-1])
+    print (arrOfLeft)
 
         # x += arrOfLeft[-1]
 
     # for x in range(0, len(tmp)):
     arrOfRight=[]
     arrOfRight.append(0)
-    while(arrOfRight[-1]<=len(tmp)):
+    while(arrOfRight[-1]+1<=len(tmp)):
 
 
         arrOfRight.append(tmp[arrOfRight[-1]+2:len(tmp)].find(']]')+1 + arrOfRight[-1])
