@@ -20,10 +20,10 @@ def run():
     # for x in range(0, len(tmp)):
     arrOfRight=[]
     arrOfRight.append(0)
-    while(arrOfRight[-1]+1<=len(tmp)):
+    # while(arrOfRight[-1]+1<=len(tmp)):
 
 
-        arrOfRight.append(tmp[arrOfRight[-1]+2:len(tmp)].find(']]')+1 + arrOfRight[-1])
+    arrOfRight.append(tmp[arrOfRight[-1]+2:len(tmp)].find(']]')+1 + arrOfRight[-1])
 
         # x+= arrOfRight[-1]
 
