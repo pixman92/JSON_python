@@ -7,6 +7,10 @@ def run():
     # while(tmp.find(']]')
     holdingArray = []
     for x in range (0, len(tmp)):
-        holdingArray.append(tmp[x:len(tmp)].find('[['))
+        pos = tmp[x:len(tmp)].find('[[')
+        holdingArray.append(pos)
+        pos2 = tmp[pos2+x:len(tmp)].find(']]')
+        x+=pos2
+
         
     print(holdingArray)
