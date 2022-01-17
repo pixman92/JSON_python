@@ -20,14 +20,14 @@ def run():
 
         arrOfRight.append(tmp[arrOfRight[-1]+2:len(tmp)].find(']]')+ arrOfRight[-1] +1)
 
-        printArrs()
+    printArrs()
 
 
 def reduce():
     # left UP by 2
     for x in range(1, len(arrOfLeft)):
         arrOfLeft[x] += 2
-    
+    printArrs()    
 
 
 def printArrs():
