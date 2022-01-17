@@ -32,9 +32,9 @@ def reduce():
 
 def printArrs():
     print ("===")
-    print ('right: ]]: ', arrOfRight)
-    print ("===")
     print ('left: [[: ', arrOfLeft)
+    print ("===")
+    print ('right: ]]: ', arrOfRight)
     # for x in range(1, len(arrOfRight)):
         # arrOfRight[x] -=1s
         
