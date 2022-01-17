@@ -15,7 +15,7 @@ def run():
     arrOfRight=[]
     arrOfRight.append(0)
 
-    while(arrOfRight[-1]+3<len(tmp)):
+    while(arrOfRight[-1]+4<len(tmp)):
         arrOfLeft.append(tmp[arrOfLeft[-1]+2:len(tmp)].find('[[') + arrOfLeft[-1])
 
         print ("===")
