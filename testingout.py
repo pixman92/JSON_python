@@ -31,6 +31,14 @@ def run():
 
         # x+= arrOfRight[-1]
 
+def reduce():
+    for x in range(1, len(arrOfLeft)):
+        arrOfLeft[x] -=1
+
+    for x in range(1, len(arrOfRight)):
+        arrOfRight[x] -=1
+        
+
 
 
 # def runOLD():
