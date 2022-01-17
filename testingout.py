@@ -41,9 +41,19 @@ def printArrs():
     print ("===")
     print ('left: [[: ', arrOfLeft)
     print ("===")
-    print ('right: ]]: ', arrOfRight)
+    print ('right: "]]: ', arrOfRight)
     # for x in range(1, len(arrOfRight)):
         # arrOfRight[x] -=1s
+
+arrayPulled=[]
+def pullIndexesOfBetweenBrackets():
+    global arrayPulled
+    for x in range (0, len(arrOfLeft)):
+        if(x<len(arrOfRight)):  
+            arrayPulled.append(tmp[arrOfLeft[x]:arrOfRight[x+1]])
+        else:
+            arrayPulled.append(tmp[arrOfLeft[x]:arrOfRight[x]])
+
         
 
 
