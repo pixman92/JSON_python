@@ -33,53 +33,53 @@ def run():
 
 
 
-def runOLD():
-    # tmp = [[['name?', 'sam'], ['time', 'noon'],['lucky', 'yup'] ], ['people', 'are awesome'], [['age', '12'], ['place', 'nowhere']]]
+# def runOLD():
+#     # tmp = [[['name?', 'sam'], ['time', 'noon'],['lucky', 'yup'] ], ['people', 'are awesome'], [['age', '12'], ['place', 'nowhere']]]
 
-    tmp = [[['1', '2'], ['3', '4']], [['5', '6'],['7', '8']]]
+#     tmp = [[['1', '2'], ['3', '4']], [['5', '6'],['7', '8']]]
 
-    tmp=str(tmp)
-    # while(tmp.find(']]')
-    holdingArray = []
-    pos = 0
-    pos2 = 0
-    while (pos2 < len(tmp)):
-        # import pdb; pdb.set_trace()  # debugger
+#     tmp=str(tmp)
+#     # while(tmp.find(']]')
+#     holdingArray = []
+#     pos = 0
+#     pos2 = 0
+#     while (pos2 < len(tmp)):
+#         # import pdb; pdb.set_trace()  # debugger
 
-        pos = tmp[pos2:len(tmp)].find('[[') #0
-        print('pos', pos)
-        print('pos2', pos2)
-        holdingArray.append(pos)
-
-
-
-        # import pdb; pdb.set_trace() # debugger
-
-        pos2 += tmp[pos:len(tmp)].find(']]') #23
-        pos2 += 2                           #25
-        holdingArray.append(pos2)
-
-        pos += tmp[pos2:len(tmp)].find('[[') #27
-        holdingArray.append(pos)            
-
-        pos2 += tmp[pos+2:len(tmp)].find(']]') #end
-        holdingArray.append(pos2)
+#         pos = tmp[pos2:len(tmp)].find('[[') #0
+#         print('pos', pos)
+#         print('pos2', pos2)
+#         holdingArray.append(pos)
 
 
 
-        print('pos', pos)
-        print('pos2', pos2)
+#         # import pdb; pdb.set_trace() # debugger
 
-        import pdb; pdb.set_trace() # debugger
+#         pos2 += tmp[pos:len(tmp)].find(']]') #23
+#         pos2 += 2                           #25
+#         holdingArray.append(pos2)
+
+#         pos += tmp[pos2:len(tmp)].find('[[') #27
+#         holdingArray.append(pos)            
+
+#         pos2 += tmp[pos+2:len(tmp)].find(']]') #end
+#         holdingArray.append(pos2)
 
 
 
-        
-        # pos2 = tmp[pos2+x:len(tmp)].find(']]')
-        # x+=pos2
+#         print('pos', pos)
+#         print('pos2', pos2)
+
+#         import pdb; pdb.set_trace() # debugger
+
+
 
         
-    print(holdingArray)
+#         # pos2 = tmp[pos2+x:len(tmp)].find(']]')
+#         # x+=pos2
+
+        
+#     print(holdingArray)
 
 # index:
 # start: 0, then +2
