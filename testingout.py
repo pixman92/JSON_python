@@ -32,11 +32,14 @@ def run():
         # x+= arrOfRight[-1]
 
 def reduce():
+    # left UP by 2
     for x in range(1, len(arrOfLeft)):
-        arrOfLeft[x] -=1
+        arrOfLeft[x] += 2
+    
 
-    for x in range(1, len(arrOfRight)):
-        arrOfRight[x] -=1
+
+    # for x in range(1, len(arrOfRight)):
+        # arrOfRight[x] -=1s
         
 
 
