@@ -18,18 +18,10 @@ def run():
     while(arrOfRight[-1]+4<len(tmp)):
         arrOfLeft.append(tmp[arrOfLeft[-1]+2:len(tmp)].find('[[') + arrOfLeft[-1] +1)
 
-        print ("===")
-        print ('right: ]]: ', arrOfRight)
-        print ("===")
-        print ('left: [[: ', arrOfLeft)
-
-        # x += arrOfLeft[-1]
-
-
-
         arrOfRight.append(tmp[arrOfRight[-1]+2:len(tmp)].find(']]')+ arrOfRight[-1] +1)
 
-        # x+= arrOfRight[-1]
+        printArrs()
+
 
 def reduce():
     # left UP by 2
@@ -38,6 +30,11 @@ def reduce():
     
 
 
+def printArrs():
+    print ("===")
+    print ('right: ]]: ', arrOfRight)
+    print ("===")
+    print ('left: [[: ', arrOfLeft)
     # for x in range(1, len(arrOfRight)):
         # arrOfRight[x] -=1s
         
