@@ -15,6 +15,9 @@ def run():
     arrOfRight=[]
     arrOfRight.append(0)
 
+    if(tmp[0:len(tmp)].find('[[')==0):
+        arrOfLeft[0] = 2
+
     while(arrOfRight[-1]+4<len(tmp)):
         arrOfLeft.append(tmp[arrOfLeft[-1]+2:len(tmp)].find('[[') + arrOfLeft[-1] +1)
 
@@ -27,6 +30,9 @@ def reduce():
     # left UP by 2
     for x in range(1, len(arrOfLeft)):
         arrOfLeft[x] += 2
+
+    for x in range(1, len(arrOfRight)):
+        arrOfRight[x] += 2
     printArrs()    
 
 
