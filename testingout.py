@@ -49,7 +49,7 @@ arrayPulled=[]
 def pullIndexesOfBetweenBrackets():
     global arrayPulled
     for x in range (0, len(arrOfLeft)):
-        if(x<len(arrOfRight)):  
+        if(x<=len(arrOfRight)):  
             arrayPulled.append(tmp[arrOfLeft[x]:arrOfRight[x+1]])
         else:
             arrayPulled.append(tmp[arrOfLeft[x]:arrOfRight[x]])
