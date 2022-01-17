@@ -16,7 +16,7 @@ def run():
     arrOfRight.append(0)
 
     while(arrOfRight[-1]+4<len(tmp)):
-        arrOfLeft.append(tmp[arrOfLeft[-1]+2:len(tmp)].find('[[') + arrOfLeft[-1])
+        arrOfLeft.append(tmp[arrOfLeft[-1]+2:len(tmp)].find('[[') + arrOfLeft[-1] +1)
 
         print ("===")
         print ('right: ]]: ', arrOfRight)
@@ -27,7 +27,7 @@ def run():
 
 
 
-        arrOfRight.append(tmp[arrOfRight[-1]+2:len(tmp)].find(']]')+ arrOfRight[-1])
+        arrOfRight.append(tmp[arrOfRight[-1]+2:len(tmp)].find(']]')+ arrOfRight[-1] +1)
 
         # x+= arrOfRight[-1]
 
