@@ -1,2 +1,18 @@
 /commits for this Repo
 https://github.com/pixman92/JSON_python/commit/
+
+
+addData(['age', '14'])
+
+addData([['places', 'GVCC'],['places', 'Goleta'],['places', 'home']])
+addData([['age', '10'],['age', '12'], ['age', '14']])
+
+=================
+regex stuff
+
+for within [[ & ]]s
+\[\[(.*?)\]\]
+
+for within quotes
+\'.*?\'
+
