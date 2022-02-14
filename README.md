@@ -17,7 +17,7 @@ for this README I will be using ```myJSON```
 <br><br>
 ```myJSON.add(_data_)```
 <br>
-Where _data_ is a single Deminsion Python List
+Where _data_ is a single Dimensions Python List
 <br><br>
 ```myJSON.printOut()```
 <br>
