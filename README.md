@@ -2,13 +2,20 @@
 
 This is a Library for making 2D lists in Python. That can be pushed and pulled between Array form & String form.
 
-First:
--Download the module.
--Import it to your Python project
-```from JSONPython_Instance import *```
+<br>
+<br>
 
+First:
+<br>
+-Download the module.
+<br>
+-Import it to your Python project
+<br>
+```from JSONPython_Instance import *```
+<br>
 -Declare a variable with which you will create a new instance of JSONPython
 
+<br><br>
 for this README I will be using ```myJSON```
 
 =================
