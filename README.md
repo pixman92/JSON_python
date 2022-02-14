@@ -13,9 +13,10 @@ for this README I will be using ```myJSON```
 
 =================
 
-The functions of this library are as follows:
+<u>The functions of this library are as follows:</u>
+<br><br>
 ```myJSON.add(_data_)```
-
+<br>
 Where _data_ is a single Deminsion Python List
 <br><br>
 ```myJSON.printOut()```
@@ -53,8 +54,19 @@ as if it were created by organically
 Function for removing data from array, at 
 _index_ point
 
+<br><br>
+=================
+<br>
+To access the inner Data
+```myJSON.JSONArray```
+<br>
+For the _Array_ data
+<br><br>
+```myJSON.JSONString```
+<br>
+For the _String_ data
 
-
+<br><br><br>
 
 
 
