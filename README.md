@@ -1,6 +1,6 @@
 # JSONPython_Instance()
 
-This is a Library for makinge 2D lists in Python. That be pushed and pulled between Array form & String form.
+This is a Library for making 2D lists in Python. That can be pushed and pulled between Array form & String form.
 
 First:
 -Download the module.
