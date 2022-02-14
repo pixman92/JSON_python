@@ -16,3 +16,13 @@ for within [[ & ]]s
 for within quotes
 \'.*?\'
 
+=================
+
+how to import this module??
+- download module
+- put in same folder as .py
+- import
+    from JSONPython_Instance import * 
+    
+
+
