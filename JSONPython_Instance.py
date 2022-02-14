@@ -51,10 +51,3 @@ class JSONPython_Instance():
         self.stringToArray()
 
 
-# me = JSONPython_Instance()
-def run():
-    me = JSONPython_Instance()
-    me.add([['age', '16']])
-    me.printOut()
-    me.add([['time', 'lunch'], ['time?', 'bedtime']])
-    import pdb; pdb.set_trace() #debugger
