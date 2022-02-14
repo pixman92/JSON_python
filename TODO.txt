@@ -1,0 +1,33 @@
+me = JSONPython_Instance()
+me.add(['age', '16'])
+me.printOut()
+
+
+me.add([['age', '12'], ['age', '22'],['age','222']])
+
+me.add([['time', 'lunch'], ['time?', 'bedtime']])
+
+me.addMoreAtIndex(0, [['time', 'lunch'], ['time?', 'bedtime']], False)
+
+
+me.addMoreAtIndex(0, ['places?', 'oh ill go'], False)
+
+
+=================
+JSONArray[1][0][1][0]
+JSONArray[index][0][1][0]
+
+me.JSONArray[1][0][1][0].append(['place?', 'home'])
+
+[['place?', 'home']]
+
+me.addMoreAtIndex(1, ['going?', 'home'], False)
+
+
+# me = JSONPython_Instance()
+def run():
+    me = JSONPython_Instance()
+    me.add([['age', '16']])
+    me.printOut()
+    me.add([['time', 'lunch'], ['time?', 'bedtime']])
+    import pdb; pdb.set_trace() #debugger
