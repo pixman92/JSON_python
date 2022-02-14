@@ -44,16 +44,19 @@ Function for converting _stringData_ to arrayData
 ```myJSON.addMoreAtIndex(*index*, *data*, *overwriteBoolean*)```
 <br>
 Function for adding more data at a specific index
+<br>
 _data_ - is the data (2D list) to be added at that index
+<br>
 _overwriteBoolean_ - If True - it will overwrite all List Data (at that *index*)
+<br>
 If False - it will simply append data (to that *index*)
 <br><br>
 
 ```myJSON.insertStr(*previousStringData*)```
 <br>
-Function for pulling previous data (in String Form) and 
-converting it, to be accessible to manipulated as data, 
-as if it were created by organically
+Function for pulling previous data (in String Form) and<br> 
+converting it, to be accessible to manipulated as data,<br> 
+as if it were created by organically<br>
 <br><br>
 
 ```myJSON.removeAtIndex(*index*)```
