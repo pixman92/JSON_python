@@ -62,7 +62,6 @@ Function for removing data from array, at
 _index_ point
 
 <br><br>
-=================
 <br>
 To access the inner Data
 ```myJSON.JSONArray```
