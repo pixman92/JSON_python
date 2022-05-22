@@ -14,6 +14,7 @@ First:
 ```from JSONPython_Instance import *```
 <br>
 -Declare a variable with which you will create a new instance of JSONPython
+```myJSON = JSONPython_Instance() ```
 
 <br><br>
 for this *README* I will be using ```myJSON```
